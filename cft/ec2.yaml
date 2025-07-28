@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "This template creates an EC2 instance"
+
+Resources:
+  MyEc2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-084568db4383264d4
+      KeyName: LavanyasVm
+      SecurityGroupIds:
+        - sg-01fed0f2690ada99b
+      SubnetId: subnet-05bc261d143685cac       
+
+      
+
+
+
+          
